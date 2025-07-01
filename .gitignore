@@ -1,0 +1,7 @@
+client-vscode
+Debug
+CMakeFiles
+/CMakeCache.txt
+/build.ninja
+/cmake_install.cmake
+/cmake/stm32cubemx/cmake_install.cmake

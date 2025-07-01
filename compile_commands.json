@@ -1,0 +1,98 @@
+[
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\main.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\main.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\main.c",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\main.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\gpio.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\gpio.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\gpio.c",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\gpio.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\memorymap.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\memorymap.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\memorymap.c",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\memorymap.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\usart.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\usart.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\usart.c",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\usart.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\stm32h7xx_it.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\stm32h7xx_it.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\stm32h7xx_it.c",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\stm32h7xx_it.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\sysmem.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\sysmem.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\sysmem.c",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\sysmem.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\syscalls.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\syscalls.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\syscalls.c",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\Core\\Src\\syscalls.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -g -o CMakeFiles\\USB_MultiDevice.dir\\startup_stm32h743xx.s.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\startup_stm32h743xx.s",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\startup_stm32h743xx.s",
+  "output": "CMakeFiles\\USB_MultiDevice.dir\\startup_stm32h743xx.s.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32h7xx.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\system_stm32h7xx.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Core\\Src\\system_stm32h7xx.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32h7xx.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_exti.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_exti.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_exti.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_exti.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_gpio.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_gpio.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_gpio.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_gpio.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_rcc.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_rcc.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_rcc.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_rcc.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_utils.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_utils.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_utils.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_utils.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_usart.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_usart.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_usart.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_usart.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_dma.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_dma.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_dma.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_dma.c.obj"
+},
+{
+  "directory": "F:/004-Template/007_VScode/USB_MultiDevice",
+  "command": "C:\\ST\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DEXTERNAL_CLOCK_VALUE=12288000 -DHSE_STARTUP_TIMEOUT=100 -DHSE_VALUE=25000000 -DHSI_VALUE=64000000 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DLSI_VALUE=32000 -DSTM32H743xx -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DVDD_VALUE=3300 -IF:/004-Template/007_VScode/USB_MultiDevice/Core/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/STM32H7xx_HAL_Driver/Inc -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Device/ST/STM32H7xx/Include -IF:/004-Template/007_VScode/USB_MultiDevice/Drivers/CMSIS/Include  -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_pwr.c.obj -c F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_pwr.c",
+  "file": "F:\\004-Template\\007_VScode\\USB_MultiDevice\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_pwr.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_pwr.c.obj"
+}
+]
