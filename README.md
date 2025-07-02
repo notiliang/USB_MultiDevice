@@ -1,2 +1,2 @@
 # USB_MultiDevice
-USB multi-device design of STM32H43
+USB multi-device design of STM32H743
