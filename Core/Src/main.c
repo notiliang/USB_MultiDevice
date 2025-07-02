@@ -107,7 +107,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    CDC_Transmit_HS(data, sizeof(data) - 1);
+    //CDC_Transmit_HS(data, sizeof(data) - 1);
     HAL_Delay(1000); // Transmit every second
     /* USER CODE BEGIN 3 */
   }
