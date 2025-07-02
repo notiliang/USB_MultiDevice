@@ -58,6 +58,8 @@ static void MPU_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+uint8_t data[] = "Hello from USB CDC!\r\n";
+
 
 /* USER CODE END 0 */
 
@@ -105,7 +107,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+    CDC_Transmit_HS(data, sizeof(data) - 1);
+    HAL_Delay(1000); // Transmit every second
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
