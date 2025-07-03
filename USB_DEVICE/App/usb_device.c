@@ -27,7 +27,7 @@
 #include "usbd_cdc_if.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "usbd_composite_builder.h"
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN PV */

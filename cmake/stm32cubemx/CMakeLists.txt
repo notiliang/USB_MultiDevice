@@ -29,6 +29,7 @@ set(MX_Application_Src
     ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usb_device.c
     ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usbd_desc.c
     ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usbd_cdc_if.c
+    ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usbd_composite_builder.c
     ${CMAKE_SOURCE_DIR}/Core/Src/main.c
     ${CMAKE_SOURCE_DIR}/Core/Src/gpio.c
     ${CMAKE_SOURCE_DIR}/Core/Src/memorymap.c
@@ -87,7 +88,8 @@ set(MX_LINK_DIRS
 # Project static libraries
 set(MX_LINK_LIBS 
     STM32_Drivers
-    USB_Device_Library	
+    USB_Device_Library
+	
 )
 # Interface library for includes and symbols
 add_library(stm32cubemx INTERFACE)
