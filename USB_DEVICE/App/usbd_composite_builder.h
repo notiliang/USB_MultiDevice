@@ -26,7 +26,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include  "usbd_ioreq.h"
-
+#include  "usbd_cdc.h"
 #if USBD_CMPSIT_ACTIVATE_HID == 1U
 #include "usbd_hid.h"
 #endif /* USBD_CMPSIT_ACTIVATE_HID */
@@ -95,7 +95,7 @@ extern "C" {
 #endif /* USBD_CMPSIT_ACTIVATE_DFU */
 
 #ifndef USBD_CMPSIT_ACTIVATE_CDC
-#define USBD_CMPSIT_ACTIVATE_CDC                           0U
+#define USBD_CMPSIT_ACTIVATE_CDC                           1U
 #endif /* USBD_CMPSIT_ACTIVATE_CDC */
 
 #ifndef USBD_CMPSIT_ACTIVATE_CDC_ECM

@@ -63,7 +63,7 @@
   */
 
 /* 启用复合设备支持 */
-//#define USE_USBD_COMPOSITE
+#define USE_USBD_COMPOSITE
 
 /*---------- -----------*/
 #define USBD_MAX_NUM_INTERFACES     3U

@@ -72,14 +72,20 @@ void MX_USB_DEVICE_Init(void)
   {
     Error_Handler();
   }
-  if (USBD_RegisterClass(&hUsbDeviceHS, &USBD_CDC) != USBD_OK)
+
+  hUsbDeviceHS.tclasslist[hUsbDeviceHS.classId].ClassType = CLASS_TYPE_CDC;
+  if (USBD_CMPSIT_AddToConfDesc(&hUsbDeviceHS) != USBD_OK)
   {
     Error_Handler();
   }
-  if (USBD_CDC_RegisterInterface(&hUsbDeviceHS, &USBD_Interface_fops_HS) != USBD_OK)
-  {
-    Error_Handler();
-  }
+  // if (USBD_RegisterClass(&hUsbDeviceHS, &USBD_CDC) != USBD_OK)
+  // {
+  //   Error_Handler();
+  // }
+  // if (USBD_CDC_RegisterInterface(&hUsbDeviceHS, &USBD_Interface_fops_HS) != USBD_OK)
+  // {
+  //   Error_Handler();
+  // }
   if (USBD_Start(&hUsbDeviceHS) != USBD_OK)
   {
     Error_Handler();
