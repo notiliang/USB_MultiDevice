@@ -13,27 +13,37 @@ set(MX_Defines_Syms
 # STM32CubeMX generated include paths
 set(MX_Include_Dirs
     ${CMAKE_SOURCE_DIR}/Core/Inc
-    ${CMAKE_SOURCE_DIR}/USB_DEVICE/App
-    ${CMAKE_SOURCE_DIR}/USB_DEVICE/Target
+    ${CMAKE_SOURCE_DIR}/Composite
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Inc
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
-    ${CMAKE_SOURCE_DIR}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc
-    ${CMAKE_SOURCE_DIR}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc
     ${CMAKE_SOURCE_DIR}/Drivers/CMSIS/Device/ST/STM32H7xx/Include
     ${CMAKE_SOURCE_DIR}/Drivers/CMSIS/Include
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/MSC/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/HID_KEYBOARD/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/HID_CUSTOM/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Core/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Target
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/DFU/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/PRINTER/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/HID_MOUSE/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/AUDIO_MIC/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/AUDIO_COMMON
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/COMPOSITE/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/AUDIO_SPKR/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/CDC_ACM/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/VIDEO/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/CDC_RNDIS/Inc
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/CDC_ECM/Inc
 )
 
 # STM32CubeMX generated application sources
 set(MX_Application_Src
-    ${CMAKE_SOURCE_DIR}/USB_DEVICE/Target/usbd_conf.c
-    ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usb_device.c
-    ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usbd_desc.c
-    ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usbd_cdc_if.c
-    ${CMAKE_SOURCE_DIR}/USB_DEVICE/App/usbd_composite_builder.c
     ${CMAKE_SOURCE_DIR}/Core/Src/main.c
     ${CMAKE_SOURCE_DIR}/Core/Src/gpio.c
     ${CMAKE_SOURCE_DIR}/Core/Src/memorymap.c
     ${CMAKE_SOURCE_DIR}/Core/Src/usart.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/usb_otg.c
     ${CMAKE_SOURCE_DIR}/Core/Src/stm32h7xx_it.c
     ${CMAKE_SOURCE_DIR}/Core/Src/stm32h7xx_hal_msp.c
     ${CMAKE_SOURCE_DIR}/Core/Src/sysmem.c
@@ -46,9 +56,6 @@ set(STM32_Drivers_Src
     ${CMAKE_SOURCE_DIR}/Core/Src/system_stm32h7xx.c
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_exti.c
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_gpio.c
-    ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c
-    ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c
-    ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_rcc.c
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_utils.c
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
@@ -69,16 +76,47 @@ set(STM32_Drivers_Src
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usart.c
     ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_dma.c
+    ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c
+    ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c
+    ${CMAKE_SOURCE_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c
 )
 
 # Drivers Midllewares
 
 
-set(USB_Device_Library_Src
-    ${CMAKE_SOURCE_DIR}/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
-    ${CMAKE_SOURCE_DIR}/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
-    ${CMAKE_SOURCE_DIR}/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
-    ${CMAKE_SOURCE_DIR}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+set(Composite_Src
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/CDC_ECM/Src/usbd_cdc_ecm.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_cdc_ecm_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/CDC_RNDIS/Src/usbd_cdc_rndis.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_cdc_rndis_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/VIDEO/Src/usbd_video.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_video_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/CDC_ACM/Src/usbd_cdc_acm.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_cdc_acm_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/AUDIO_SPKR/Src/usbd_audio_spkr.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_audio_spkr_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/COMPOSITE/Src/usbd_composite.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/AUDIO_MIC/Src/usbd_audio_mic.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_audio_mic_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/HID_MOUSE/Src/usbd_hid_mouse.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/PRINTER/Src/usbd_printer.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_printer_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/DFU/Src/usbd_dfu.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_dfu_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Core/Src/usbd_core.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Core/Src/usbd_ctlreq.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Core/Src/usbd_ioreq.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usb_device.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_desc.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Target/usbd_conf.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/HID_CUSTOM/Src/usbd_hid_custom.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_hid_custom_if.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/HID_KEYBOARD/Src/usbd_hid_keyboard.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/MSC/Src/usbd_msc.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/MSC/Src/usbd_msc_bot.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/MSC/Src/usbd_msc_data.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/Class/MSC/Src/usbd_msc_scsi.c
+    ${CMAKE_SOURCE_DIR}/Middlewares/Third_Party/AL94_USB_Composite/COMPOSITE/App/usbd_msc_if.c
 )
 
 # Link directories setup
@@ -88,8 +126,7 @@ set(MX_LINK_DIRS
 # Project static libraries
 set(MX_LINK_LIBS 
     STM32_Drivers
-    USB_Device_Library
-	
+    Composite	
 )
 # Interface library for includes and symbols
 add_library(stm32cubemx INTERFACE)
@@ -102,10 +139,10 @@ target_sources(STM32_Drivers PRIVATE ${STM32_Drivers_Src})
 target_link_libraries(STM32_Drivers PUBLIC stm32cubemx)
 
 
-# Create USB_Device_Library static library
-add_library(USB_Device_Library OBJECT)
-target_sources(USB_Device_Library PRIVATE ${USB_Device_Library_Src})
-target_link_libraries(USB_Device_Library PUBLIC stm32cubemx)
+# Create Composite static library
+add_library(Composite OBJECT)
+target_sources(Composite PRIVATE ${Composite_Src})
+target_link_libraries(Composite PUBLIC stm32cubemx)
 
 # Add STM32CubeMX generated application sources to the project
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE ${MX_Application_Src})

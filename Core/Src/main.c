@@ -20,12 +20,12 @@
 #include "main.h"
 #include "memorymap.h"
 #include "usart.h"
-#include "usb_device.h"
+#include "usb_otg.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usb_device.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,7 +58,7 @@ static void MPU_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t data[] = "Hello from USB CDC!\r\n";
+uint8_t data[] = "Hello Baby!\r\n";
 
 
 /* USER CODE END 0 */
@@ -97,15 +97,19 @@ int main(void)
   MX_GPIO_Init();
   MX_UART4_Init();
   MX_UART5_Init();
-  MX_USB_DEVICE_Init();
+  MX_USB_OTG_HS_PCD_Init();
   /* USER CODE BEGIN 2 */
-
+  MX_USB_DEVICE_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    LL_GPIO_ResetOutputPin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
+    HAL_Delay(1000);
+    LL_GPIO_SetOutputPin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
+    HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
